@@ -2,10 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Task Scheduler</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="bg-[#111111] ms-auto me-auto"> <!--[bg-[url('/Assest/images/bg-header.png')] bg-cover bg-center bg-no-repeat]-->
+    <header class="w-full h-[100vh]">
+        <nav class="pl-5 pr-5 p-3 flex items-center justify-between h-50 w-full bg-none">
+            <div class="flex  items-center justify-content-between gap-1 w50">
+                <img src="./Assest/images/logo.png" class="size-8">
+                <p class="font-['Inter', sans-serif] text-xl font-bold text-[#BFD616]">TASK<p class="font-['Inter', sans-serif] text-lg font-light text-white">Scheduler</p></p>
+            </div>
+            <div class="w-50 h-30 bg-[#BFD616] font-light rounded-b-3xl rounded-t-3xl">
+                <a href="#">
+                    <p class="font-['Inter', sans-serif] font-bold text-black p-2">FILL A SCHEDULE</p>
+                </a>
+            </div>
+        </nav>
+        <div class="flex justify-center h-lvh w-screen items-center">
+            <img src="./Assest/images/bg-header.png" class="z-0 relative">
+            <h1 class="font-['Orbitron'] text-center text-white text-9xl p-9 absolute">To Do Or Not<br>To Do</h1>
+        </div>
+    </header>
     
+    <main class="bg-[#2C2C2C] h-lvh w-screen">
+        <div class="bg-[url('/Assest/images/bg-main.png')] bg-cover bg-center bg-no-repeat h-lvh w-[100%] flex place-content-center place-items-center">
+            <div class="bg-[#D9D9D9] rounded-b-3xl rounded-t-3xl h-[700px] w-[650px]">
+                <h2 class="font-['Orbitron'] text-center font-light p-1 text-white text-4xl mt-[50px]">Add a new task<br>schedule</h2>
+                <br>
+                <form>
+                    Enter the task name &nbsp;
+                    <input type="text" placeholder="Name of task" name="Name of task">
+                </form>
+                <form>
+                    Enter the task description &nbsp;
+                    <input type="text" placeholder="Description of task" name="Description of task">
+                </form>
+                <form>
+                    Choice the task priority &nbsp;
+                    <select  multiple="multiple">
+                        <option>To Do</option>
+                        <option>Doing</option>
+                        <option>Done</option>
+                    </select>
+                </form>
+                <form>
+                    Add a deadline &nbsp;
+                    <input type="date" name="Date">
+                </form>
+                <button>
+                    Add Task
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="h-[200px] w-[100%]">
+        <p class="text-center font-['Pathway Gothic One'] font-light text-white">Copyright © 2024 YouCode Coffee. All rights reserved.</p>
+    </footer>
+
+
 </body>
 </html>
