@@ -1,0 +1,68 @@
+#form {
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.div1 {
+    align-items: start;
+}
+
+.div1 .d2 {
+    margin-top: 20px;
+}
+
+.div2 {
+    align-items: end;
+}
+
+.div2 .d4 {
+    margin-top: 33px;
+}
+
+#name {
+    height: 50px;
+    width: 325px;
+    padding: 12px;
+    border-radius: 50px;
+}
+
+#description {
+    height: 100px;
+    width: 325px;
+    padding: 12px;
+    border-radius: 30px;
+}
+
+#select {
+    height: 35px;
+    width: 200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
+}
+#date {
+    height: 35px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    width: 30px;
+    height: 30px;
+    background-image: url(/Assest/images/logo2.png)
+}
+
+#Submit {
+    background-color: black;
+    color: white;
+    height: 35px;
+    width: 200px;
+    border-radius: 50px;
+    margin-top: 33px;
+}
