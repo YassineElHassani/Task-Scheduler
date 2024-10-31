@@ -13,8 +13,8 @@ function addTasks() {
             <td>${type.value}</td>
             <td>${date.value}</td>
             <td class="flex flex items-center gap-[10px] border-solid">
-                <button onclick="updateTasks(event)" class="flex items-center justify-center w-[30px] h-[30px]"><img src="/Assest/images/edit.png" class="w-[20px] h-[20px]"></button>
-                <button onclick="deleteTask(event)" class="flex items-center justify-center w-[30px] h-[30px]"><img src="/Assest/images/trash.png" class="w-[20px] h-[20px]"></button>
+                <button onclick="updateTasks(event)" class="flex items-center justify-center w-[30px] h-[30px]"><img src="./Assest/images/edit.png" class="w-[20px] h-[20px]"></button>
+                <button onclick="deleteTask(event)" class="flex items-center justify-center w-[30px] h-[30px]"><img src="./Assest/images/trash.png" class="w-[20px] h-[20px]"></button>
             </td>
         </tr>
         `
