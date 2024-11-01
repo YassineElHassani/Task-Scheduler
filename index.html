@@ -31,9 +31,9 @@
         </div>
     </header>
     
-    <main class="bg-[#2C2C2C] h-[100vh] w-full" id="formSection">
-        <div class="bg-[url('./Assest/images/bg-main.png')] bg-cover bg-center bg-no-repeat h-lvh w-[100%] flex place-content-center place-items-center">
-            <div class="bg-[#D9D9D9] rounded-b-3xl rounded-t-3xl h-[890px] w-[990px]">
+    <main class="bg-[#2C2C2C] h-[me-auto] w-full" id="formSection">
+        <div class="bg-[url('./Assest/images/bg-main.png')] bg-cover bg-center bg-no-repeat mt-[50px] flex place-content-center place-items-center">
+            <div class="bg-[#D9D9D9] rounded-b-3xl rounded-t-3xl h-[me-auto] w-[990px] mt-[50px] mb-[50px]">
                 <section id="formSection">
                     <h2 class="font-['Orbitron'] text-center font-light p-1 text-white text-4xl mt-[50px]">Add a new task<br>schedule</h2>
                     <form id="form-tasks" class="space-y-6">
@@ -52,9 +52,9 @@
                                 <div>
                                     <label for="select" class="block text-sm font-medium text-gray-700">Priority Status</label>
                                     <select id="select" required >
-                                        <option value="To Do">To Do</option>
-                                        <option value="Doing">Doing</option>
-                                        <option value="Done">Done</option>
+                                        <option class="text-yellow" value="To Do">To Do</option>
+                                        <option class="text-orange" value="Doing">Doing</option>
+                                        <option class="text-green" value="Done">Done</option>
                                     </select>
                                 </div>
                                 <div>
@@ -70,7 +70,7 @@
                         </div>
                     </form>
                 </section>
-                <section class="bg-white shadow-md overflow-hidden">
+                <section class="bg-white shadow-md overflow-hidden rounded-bl-3xl rounded-br-3xl">
                     <div class="overflow-x-auto">
                         <table class="min-w-full" id="crudTable">
                             <thead class="bg-gray-100">
@@ -87,7 +87,7 @@
                                     <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                         Deadline
                                     </th>
-                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    <th class="px-8 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                         Actions
                                     </th>
                                 </tr>
@@ -100,7 +100,7 @@
         </div>
     </main>
 
-    <footer class="h-[200px] w-[100%]">
+    <footer class="h-[200px] w-[100%] mt-[200px]">
         <p class="text-center font-['Pathway Gothic One'] font-light text-white">Copyright © 2024 Task Scheduler. All rights reserved.</p>
     </footer>
 
