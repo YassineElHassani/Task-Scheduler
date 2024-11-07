@@ -4,7 +4,7 @@ let type = document.getElementById("select");
 let date = document.getElementById("date");
 
 function addTasks() {
-    if(name.value && desc.value  && type.value && date.value != "") {
+    if(name.value != "" && desc.value != ""  && type.value != "" && date.value != "") {
         let tableBody = document.getElementById("task-list");
         
         let color = ""
